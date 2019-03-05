@@ -1,19 +1,21 @@
 <template>
   <div id="app">
-    <MainTitle msg="This is a title" />
+    <BaseTitle>This is text</BaseTitle>
   </div>
 </template>
 
 <script>
-import MainTitle from './components/MainTitle.vue'
+import TitleBase from './components/BaseTitle.vue'
 
 export default {
   name: 'app',
   components: {
-    MainTitle
+    BaseTitle
   }
 }
+
 </script>
 
 <style>
+
 </style>

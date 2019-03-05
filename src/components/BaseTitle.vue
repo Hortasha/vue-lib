@@ -1,10 +1,10 @@
 <template>
-  <h1>{{ msg }}</h1>
+  <h1><slot /></h1>
 </template>
 
 <script>
 export default {
-  name: 'MainTitle',
+  name: 'BaseTitle',
   props: {
     msg: String
   }
