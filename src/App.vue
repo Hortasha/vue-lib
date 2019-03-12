@@ -12,7 +12,8 @@
       <base-column col="col-6">
         <base-button v-on:clicked="handleClick(10, 5)">
           Click me
-        </base-button> 
+        </base-button>
+        <base-input v-bind:reg="new RegExp('^[a-z]{3}$', 'i')">Hello</base-input>
       </base-column>
       <base-column col="col-6">
         <base-title>Text</base-title>
@@ -30,6 +31,7 @@ import BaseSection from './components/BaseSection';
 import BaseColumn from './components/BaseColumn';
 import BaseButton from './components/BaseButton';
 import EditableText from './components/EditableText';
+import BaseInput from './components/BaseInput';
 
 export default {
   name: 'app',
@@ -40,7 +42,8 @@ export default {
     Navbar,
     NavItem,
     BaseButton,
-    EditableText
+    EditableText,
+    BaseInput
   },
   methods: {
     handleClick(num1, num2) {
