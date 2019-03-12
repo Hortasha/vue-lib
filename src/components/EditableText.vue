@@ -36,6 +36,7 @@ export default {
             this.edit = false;
         }
     },
+    
     beforeMount() {
         this.text = this.$slots.default[0].text;
     }
