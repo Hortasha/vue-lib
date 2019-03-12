@@ -1,16 +1,16 @@
 <template>
-<input
-    class='input'
-    v-bind:class="{ 'input-error': error === false }"
-    v-bind:type="type ? type : 'text'"
-    v-bind:placeholder="placeholder ? placeholder : ''"
-    v-bind:autoFocus="autoFocus ? true : false"
-    v-bind:pattern="reg ? reg : ''"
-    v-model="text"
-    v-on:keydown="$emit('keydown')"
-    v-on:blur="$emit('blur')"
-    v-on:input="onInput"
-/>
+    <input
+        class='input'
+        v-bind:class="{ 'input-error': error === false }"
+        v-bind:type="type ? type : 'text'"
+        v-bind:placeholder="placeholder ? placeholder : ''"
+        v-bind:autoFocus="autoFocus ? true : false"
+        v-bind:pattern="reg ? reg : ''"
+        v-model="text"
+        v-on:keydown="$emit('keydown')"
+        v-on:blur="$emit('blur')"
+        v-on:input="onInput"
+    />
 </template>
 
 <script>
@@ -34,7 +34,6 @@ export default {
     methods: {
         onInput() {
             this.error = this.reg.test(this.text);
-            console.log(this.error);
         }
     }
 }

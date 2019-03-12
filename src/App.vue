@@ -47,7 +47,7 @@ export default {
   },
   methods: {
     handleClick(num1, num2) {
-      console.log("mordi e mongo " + (num1 + num2));
+      console.log("Svaret er " + (num1 + num2));
     }
   }
 }
